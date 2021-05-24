@@ -13,38 +13,35 @@
     
 </head>
 <body>
-    <div id="app">
+    <div class="wrapper">
   <header class="header">
-      <img src="./img/logo.svg" alt="Logo" class="header__logo">
-      <nav class="header__nav">
-          <!--<button class="header__button">
-            <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8"/>
-                </svg>
-          </button>
-          <button class="header__button visually__hidden">
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z" fill="#6F6E6E"/>
-                </svg>
-          </button>-->
-          <ul class="header__nav-list ">
-              <li class="header__nav-title">
-                  <a class="header__nav-link" href="#">Сколько стоит</a>
-              </li>
-              <li class="header__nav-title">
-                <a class="header__nav-link" href="#">Клауды</a>
-            </li>
-            <li class="header__nav-title">
-                <a class="header__nav-link" href="#">Кейтеринг</a>
-            </li>
-            <li class="header__nav-title">
-                <a class="header__nav-link" href="#">Контакты</a>
-            </li>
-          </ul>
-      </nav>
+          <div class="header__container">
+      <img src="./img/logo.svg" alt="Logo" class="header__logo" width="210" height="70">
+          <div class="header__menu">
+              <div class="header__menu-button">
+                  <span></span>
+              </div>
+              <nav class="header__menu-nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-title">
+                        <a data-goto=".section__price" class="header__nav-link" href="#">Сколько стоит</a>
+                    </li>
+                    <li class="header__nav-title">
+                      <a data-goto=".section__map" class="header__nav-link" href="#">Клауды</a>
+                  </li>
+                  <li class="header__nav-title">
+                      <a data-goto=".section__catering" class="header__nav-link" href="#">Кейтеринг</a>
+                  </li>
+                  <li class="header__nav-title">
+                      <a data-goto=".section__contact" class="header__nav-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+          </div>
+        </div>
   </header>  
-  <main>
-      
+</div>
+  <main>  
       <section class="about">
       <h1 class="about__title">Замануха</h1>
       <div class="about__container">
@@ -53,19 +50,19 @@
               <div class="about__slides-item">
                 <a href="#" class="about__slides-link">
                     <img src = './img/pearl-interior.jpg'alt="Скидки" class="about__slides-picture " width="300" height="150">
-                    <p class="about__slides-title">На удаленке? Тогда тебе к нам!</p>
+                    <p class="about__slides-title"> 1 На удаленке? Тогда тебе к нам!</p>
                 </a>
               </div>
               <div class="about__slides-item">
                 <a href="#" class="about__slides-link">
                     <img src =  './img/slava-interior.jpg' alt="Скидки" class="about__item-picture" width="300" height="150">
-                    <p class="about__slides-title">На удаленке? Тогда тебе к нам!</p>
+                    <p class="about__slides-title"> 2 На удаленке? Тогда тебе к нам!</p>
                 </a>
               </div>
               <div class="about__slides-item">
                 <a href="#" class="about__slides-lin">
                     <img src = './img/legend-interior.jpg' alt="Скидки" class="about__slides-picture" width="300" height="150">
-                    <p class="about__slides-title">На удаленке? Тогда тебе к нам!</p>
+                    <p class="about__slides-title"> 3 На удаленке? Тогда тебе к нам!</p>
                 </a>
               </div>
           </div>
@@ -102,7 +99,7 @@
             <p class="features__item-text">Хеей, мы не возьмем ни цента за то что ты принесешь бутылочку французского с собой. Дадим штопор и бокальчики. Cheers... </p>
         </div>
     </section>
-    <section class="map">
+    <section class="section__map">
         <h3 class="map__title">Адреса</h3>
         <div class="map__dots">
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d46494.22440042131!2d30.43178509233622!3d59.91985187553911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scloud%20factory!5e0!3m2!1sru!2sru!4v1611696016580!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -155,7 +152,7 @@
     </div>
     <p class="footer__copyright">Copyright &copy; 2021 Cloud Factory</p>
   </footer>
-</div>
+
 
 <script src="index.js"></script>
 
